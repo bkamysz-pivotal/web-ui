@@ -28,7 +28,6 @@ repositories {
 // Apply versioning to all projects from versioning script.
 	apply plugin: 'java'
 	apply plugin: 'jacoco'
-	apply from: "$projectDir/gradle/versioning.gradle"
 	apply plugin: 'eclipse'
 	apply plugin: 'org.springframework.boot'
 	apply plugin: "io.spring.dependency-management"
@@ -94,7 +93,7 @@ repositories {
 		compile "org.springframework.boot:spring-boot-starter-actuator"
 		compile "org.springframework.cloud:spring-cloud-starter-sleuth"
 		compile "org.springframework.cloud:spring-cloud-starter-zipkin"
-		
+
 		compile "io.pivotal.spring.cloud:spring-cloud-services-starter-config-client"
 		compile "io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry"
 		compile "io.pivotal.spring.cloud:spring-cloud-services-starter-circuit-breaker"
