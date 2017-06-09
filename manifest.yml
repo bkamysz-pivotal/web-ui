@@ -9,5 +9,5 @@ env:
 applications:
 - name: webtrader
   random-route: true
-  path: ../build-output/web-ui.jar
+  path: ../build-output/web-service.jar
   services: [ discovery-service, circuit-breaker-dashboard, config-server ]
