@@ -1,8 +1,8 @@
 ---
 git-uri: https://github.com/bkamysz-pivotal/web-ui.git
 git-branch: development
-#accounts-version-git-uri: git@github.com:bkamysz-pivotal/accounts-service.git
-#accounts-version-git-branch: version
+#web-ui-version-git-uri: git@github.com:bkamysz-pivotal/web.git
+#web-ui-version-git-branch: version
 s3-endpoint: s3.amazonaws.com
 s3-access-key-id: SAMPLE786ASFD67AFT68
 s3-secret-access-key: SAMPLE976a9gefa79w6egfa79w6efga97we6fgaw
@@ -20,9 +20,9 @@ cf-db-service: p-mysql
 cf-db-service-plan: pre-existing-plan
 cf-db-service-name: traderdb
 #cf-db-service: cleardb spark traderdb
-cf-accounts-service-name: accounts-service
-cf-accounts-service-host: accounts-service
-cf-accounts-service-services: traderdb, discovery-service, circuit-breaker-dashboard, config-server
+cf-web-ui-name: web-ui
+cf-web-ui-host: web-ui
+cf-web-ui-services: traderdb, discovery-service, circuit-breaker-dashboard, config-server
 git-private-key: |
   -----BEGIN RSA PRIVATE KEY-----
   ...
