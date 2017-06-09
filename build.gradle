@@ -111,7 +111,7 @@ repositories {
 		filesMatching("**/*.yml") { expand(project.properties) }
 	}
 
-	jar { baseName = 'web' }
+	jar { baseName = 'web-ui' }
 	description = "Web interface to the springboot set of services"
 
 task wrapper(type: Wrapper) { gradleVersion = '2.12' }
