@@ -8,7 +8,7 @@ image_resource:
     tag: '8'
 
 inputs:
-- name: web-ui
+- name: web-service
 
 outputs:
 - name: build-output
@@ -17,4 +17,4 @@ params:
   TERM: dumb
 
 run:
-  path: web-ui/ci/tasks/build-web-ui/task.sh
+  path: web-service/ci/tasks/build-web-service/task.sh
