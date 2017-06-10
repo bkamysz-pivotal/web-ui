@@ -56,7 +56,7 @@ jobs:
     passed: [ prepare-cf-env ]
     trigger: true
   - task: build
-    file: web-ui/ci/tasks/build-web-ui/task.yml
+    file: web-ui/ci/tasks/build-web-service/task.yml
     params:
       ARTIFACT_ID: web-service
   - put: cf-zero-downtime-push
