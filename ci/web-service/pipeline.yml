@@ -19,7 +19,7 @@ jobs:
 - name: destroy
   public: true
   plan:
-  - get: web-service
+  - get: web-ui
   - put: cf-delete
     resource: cf-env
     params:
@@ -52,7 +52,7 @@ jobs:
   public: true
   serial: true
   plan:
-  - get: web-service
+  - get: web-ui
     passed: [ prepare-cf-env ]
     trigger: true
   - task: build
@@ -71,7 +71,7 @@ jobs:
   public: true
   serial: true
   plan:
-  - get: web-service
+  - get: web-ui
     trigger: true
   - aggregate:
     - put: cf-create-service
@@ -113,7 +113,7 @@ jobs:
         wait_for_service: true
 
 resources:
-- name: web-service
+- name: web-ui
   type: git
   source:
     uri: {{git-uri}}
