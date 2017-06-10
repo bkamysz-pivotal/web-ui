@@ -22,7 +22,7 @@ cf-db-service-name: traderdb
 #cf-db-service: cleardb spark traderdb
 cf-web-ui-name: web-service
 cf-web-ui-host: web-service
-cf-web-service-services: traderdb, discovery-service, circuit-breaker-dashboard, config-server
+cf-web-service-services: discovery-service, circuit-breaker-dashboard, config-server
 git-private-key: |
   -----BEGIN RSA PRIVATE KEY-----
   ...
