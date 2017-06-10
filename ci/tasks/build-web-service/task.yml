@@ -17,4 +17,4 @@ params:
   TERM: dumb
 
 run:
-  path: web-service/ci/tasks/build-web-service/task.sh
+  path: web-ui/ci/tasks/build-web-service/task.sh
